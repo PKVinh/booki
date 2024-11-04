@@ -1,0 +1,61 @@
+/* HEADER */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    max-width: 5%;
+}
+
+nav ul {
+    list-style: none; /* Effacer les bullets */
+    display: flex;
+    margin-left: auto;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav li:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    font-weight: bold;
+}
+
+/****** Media queries ***********/
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav img{
+        padding: 25px;
+        max-width: 20%;
+    }
+    
+    nav ul {
+        display: flex;
+        width: 100%;
+    }
+
+    nav li {
+        flex: 1;                  /* Assure que les buttons prennent toute la largeur disponible */
+        padding: 20px;             /* Ajuste le padding des buttons */
+        text-align: center;       /* Centre le texte à l'intérieur des buttons */
+        }
+
+    nav li:hover{
+        color: #0065FC;
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
+        font-weight: bold;
+    }
+}
+

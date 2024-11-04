@@ -1,0 +1,60 @@
+.activites h2 {
+    margin: 15px 0px 30px 0px; /* Marges 15px en haut, 30px en bas */
+}
+
+.activites-container {
+    display: flex; 
+    gap: 15px; /* 15px entre les éléments  */
+    width: 100%; /* largeur 100% de son élément parent */
+}
+
+.activites-container a {
+    width: 100%; /* chaque lien prend toute la largeur*/
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /* Applique une ombre portée légère*/
+}
+
+.activites-container img {
+    width: 100%; 
+    height: 250px; /* hauteur fixe pour les images */
+    object-fit: cover; /* Redimensionne et recadre l'image pour qu'elle remplisse le conteneur sans déformation */
+    border-radius: 20px 20px 0px 0px; /* Ajoute un arrondi aux coins supérieurs gauche et droit de l'image */
+}
+
+.activites-container p {
+    font-weight: bold; /* Définit le texte en gras */
+    padding: 10px; 
+}
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+@media (max-width: 1024px) {
+    .activites-container img {
+        height: 200px; 
+    }
+
+    .activites-container a {
+        flex: 1;
+    }
+}
+
+/* Small devices (phones, less than 768px) */
+
+@media screen and (max-width: 767.98px) {
+    .activites-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activites-container div {
+        width: 100%; 
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); 
+    }
+
+    .activites-container img {
+        width: 100%; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 20px 20px 0px 0px; 
+    }
+}

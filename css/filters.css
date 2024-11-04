@@ -1,0 +1,95 @@
+/* FILTRES */
+
+.filters-container {
+    display: flex;
+    align-items: center; /* Alignement au centre */
+    font-weight: bold; 
+}
+
+.filters-buttons {
+    display: flex;
+    align-items: center; 
+    font-weight: bold;
+}
+
+.filters-buttons div {
+    display: flex;
+    align-items: center; 
+    padding: 15px;
+    margin-left: 20px; /* Espace entre chaque filtre */
+    border: 1px solid grey; /* Ajoute une bordure grise autour des divs */
+    border-radius: 25px; /* Arrondit les coins des divs pour leur donner un effet "pill" */
+}
+
+.filters-buttons i {
+    padding-right: 10px; /* Crée un espace entre l'icône et le texte */
+}
+
+.filters-buttons div:hover {
+    background-color: var(--filter-bg-color); /* Change la couleur de fond des divs au survol*/
+}
+
+.filters-results {
+    display: flex;
+    align-items: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.filters-results i {
+    display: flex;
+    justify-content: center; /* Centre horizontalement l'icône à l'intérieur de son conteneur */
+    align-items: center; /* Centre verticalement l'icône à l'intérieur de son conteneur */
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d9d9d9; /* Ajoute une bordure grise autour de l'icône */
+    border-radius: 50%; /* Arrondit les bords pour créer un effet circulaire */
+    box-sizing: border-box; /* Inclut la bordure dans le calcul de la taille de l'élément */
+}
+
+.filters-results p {
+    padding-left: 10px; /* Ajoute un espace à gauche du paragraphe pour l'éloigner de l'icône */
+}
+
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 767.98px) {
+    .filters{
+        display: flex;
+        flex-wrap: wrap
+    }
+
+    .filters-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filters-container h3{
+        font-size: 18px;
+    }
+
+    .filters-results{
+        padding: 0;
+    }
+
+    .filters-buttons{
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        row-gap: 20px;
+        column-gap: 15px;
+    } 
+
+    .filters-buttons a{
+        margin-left: 0;
+        flex: 1 1;
+    }
+
+    .filters-buttons div{
+        margin-left: 0;
+    }
+}
