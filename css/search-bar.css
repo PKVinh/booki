@@ -14,15 +14,15 @@
 
 .search-icon i{
     color: black;
-    padding: 15px; /* Espace autour de l'icône */
-    background-color: var(--filter-bg-color); /* Couleur spécifique à l'icône */
+    padding: 16px; /* Espace autour de l'icône */
+    background-color: var(--secondary-bg-color); /* Couleur spécifique à l'icône */
     box-sizing: border-box;
     border-radius: 15px 0 0 15px;
 }
 
 .search-place {
     padding: 15px; /* Espace autour du texte "Marseille, France" */
-    background-color: var(--secondary-bg-color); /* Couleur différente pour le texte */
+    background-color: var(--main-bg-color); /* Couleur différente pour le texte */
     border: none; /* Retire la bordure par défaut de l'input */
     box-sizing: border-box;
     height: 50px; /* Ajuste la hauteur pour correspondre aux autres éléments */

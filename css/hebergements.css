@@ -145,6 +145,7 @@ a {
 
     .hebergements {
         width: 100%;
+        background-color: none;
     }
 
     .populaires {
@@ -176,10 +177,17 @@ a {
     .hebergements-and-populaires {
         gap: 0;
     }
-    
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
+
     .hebergements a{
         width: 100%;
     }
+
+    .hebergements-cards {
+        row-gap: 0;
+    } 
 
     .hebergements .card{
         width: 100%;
